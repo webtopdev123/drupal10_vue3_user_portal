@@ -1,5 +1,24 @@
-# Vue 3 + TypeScript + Vite
+# Headless Drupal Vue 3, GenQL GraphQL, Pinia, Vite, Typescript
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> This project is intended to be a starting point, a hint, an idea. Not a solution.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Live demo: http://gqlc.almunnings.com/
+
+## GraphQL Compose
+
+This example uses the Drupal [GraphQL Compose](https://www.drupal.org/project/graphql_compose) module to generate the GraphQL schema and types.
+
+## Development
+
+This example is setup to work with [almunnings/drupal-boilerplate](https://github.com/almunnings/drupal-boilerplate).
+
+```bash
+cp .env.example .env
+npm ci
+npm run genql
+npm run dev
+```
+
+## Environment
+
+See `.env.example` for environment variables. Create your own `.env` file locally or ensure env exists at deployment endpoint.
